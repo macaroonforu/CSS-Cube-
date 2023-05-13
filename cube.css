@@ -1,3 +1,11 @@
+.background{
+	background-image: radial-gradient(#ff8a00, #e52e71);
+}
+
+h1{
+	font-family: 'Orbitron', sans-serif;
+}
+
 .wrap {
 	perspective: 800px;
 	perspective-origin: 50% 100px;
@@ -12,6 +20,7 @@
 	width: 200px;
 	transform-style: preserve-3d;
     animation: spin 5s infinite linear;
+	
 }
 
 .cube div {
@@ -22,31 +31,32 @@
 
 .back {
 	transform: translateZ(-100px) rotateY(180deg);
-    background-color: pink; 
+    background-color: #3ED3F8; 
+	text-align: center; 
 }
 .right {
 	transform: rotateY(-270deg) translateX(100px);
 	transform-origin: top right;
-    background-color: yellow; 
+    background-color: #36D9CE; 
 }
 .left {
 	transform: rotateY(270deg) translateX(-100px);
 	transform-origin: center left;
-    background-color: red; 
+    background-color: #48EFB5; 
 }
 .top {
 	transform: rotateX(-90deg) translateY(-100px);
 	transform-origin: top center;
-    background-color: purple; 
+    background-color: #36D972; 
 }
 .bottom {
 	transform: rotateX(90deg) translateY(100px);
 	transform-origin: bottom center;
-    background-color: blue; 
+    background-color: #3EF84E; 
 }
 .front {
 	transform: translateZ(100px);
-    background-color: orange; 
+    background-color: #3EF84E; 
 }
 
 @keyframes spin {
